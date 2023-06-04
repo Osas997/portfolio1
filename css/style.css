@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Patrick+Hand&family=Poppins&family=Ubuntu&display=swap');
+:root{
+    --maincolor : #252734;
+    --secondcolor : #333646;
+    --ascentcolor : #ff9100;
+    --ubuntu : 'Ubuntu', sans-serif;
+    --patrick : 'Patrick Hand', cursive;
+    --poppins : 'Poppins', sans-serif;
+    --nunito : 'Nunito', sans-serif;
+}
+
+*,html,body{
+    font-family: var(--poppins);
+}
+
+body{
+    background-color: var(--maincolor);
+    position: relative;
+}
+
+.logo{
+    font-family: var(--nunito);
+}
+
+.nav-item:hover a{
+    color: rgb(85, 144, 144) !important;
+}
+
+.active{
+    color: rgb(85, 144, 144) !important;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+.main-judul{
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.main-judul2{
+    color: var(--ascentcolor);
+    font-size: 1.2em;
+}
+
+.navbar{
+    background-color: var(--maincolor)  ;
+}
+
+.btn-lets:hover{
+    box-shadow: 0 0 10px #ff9100;
+}
+
+@media screen and (min-width: 576px) {
+    .main-judul,.main-judul2{
+        font-size: 2rem;
+    }
+    #about{
+        margin-top: 30px;
+        padding-top: 100px;
+    }
+}
+
+.svg svg {
+    cursor: pointer;
+}
+
+.text-content h1,p{
+    font-family: var(--ubuntu) ;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-nav{
+        background-color: var(--maincolor) !important;
+    }
+    .gallery{
+        width: 100%;
+    }
+}
+
+.card-title{
+    font-family: var(--ubuntu)!important;
+    font-weight: 600;
+    font-size:1.5em;
+}
+
+.card-text{
+    font-family: var(--poppins);
+    font-size: .8em;
+    font-weight: 100;
+}
+
+.img1{
+    margin: 5px;
+    width: 15%;
+}
+
+@media screen and (max-width: 576px) {
+    .img1{
+        margin: 5px;
+        width: 25%;
+    }
+
+}
+@media screen and (max-width: 360px) {
+    .main-judul{
+        font-size: 1.6rem;
+    }
+    .main-judul2{
+        font-size: 1.2em;
+    }
+}
+
+#skill{
+    min-height: 300px;
+    background-color: var(--secondcolor);
+    padding: 20px 0 20px;
+}
+
+#about{
+    padding-top: 100px;
+}
+
+
+.sertifikat{
+    font-family: var(--ubuntu);
+    font-weight: 600;
+}
+
+#footer{
+    min-height: 80px;
+    background-color: var(--secondcolor);
+}
+
+/* scroll */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    }
+   
+  /* Handle */
+    ::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 4px;
+    }
+  
+  /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+    }
+
+.power{
+    cursor: pointer;
+    transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+}
+.power:hover{
+    transform: scale(1.15);
+}
+
+section{
+    scroll-margin: 100px;
+}
